@@ -47,73 +47,75 @@ nav img{
     margin-bottom:100px;
 }
     
-  
-  .dropdown {
-    position: relative;
+
+
+.menu>ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    border-radius:3px;
+    background-color:#32C1CD;
+    text-align:center;
+}
+.menu .down{
+    text-align:left;
+}
+.menu>ul>li>a{
+    text-decoration:none;
+    font-variant:small-caps;
+    font-size:larger;
+    color:white;
+    padding:0 10px;
+    line-height:40px;
+
+}
+
+ .menu>ul>li>a:hover{
+    color:yellow;
+} 
+.menu>ul>li{
     display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    border-radius: 0px 0px 10px 10px;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-.dropdown-content a:hover{
-      background-color: gray;
+    position:relative;
+}
+.menu>ul>li>a{
+    display:block;
 }
 
-  
-.dropdown:hover .dropdown-content {
-      display: block;
-}
-.home{
-    background-color: gray;
-    height:50px;
-    text-align: center;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-
-    
-}
-.home .menu .home-top a{
-    text-decoration: none;
-    font-size: 25px;
-    padding-right: 10px;
-    padding-left: 10px;
-    color: black;
-}
-.home .menu .home-top{
-    display: flex;
-    margin: 10px;
-    padding-left: 480px;
-}
-
-.home .menut{
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: bold;
-
-}
-.home .menu .home-top a:hover{
-    color: rgb(245, 245, 245);
-    border-bottom: 2px solid rgb(236, 236, 236);
+ .menu ul ul{ 
+     position:absolute;
+     display:none;
+     padding: 0px;
+     margin:0px;
+     list-style:none;    
+     border-radius:3px;
+     width: 120px;
+     background-color:white;
+     box-shadow:0 0 1px gray;
+} 
 
 
-}
+ .menu ul ul a{
+    display:block;
+    line-height:30px;
+    color:orangered;
+    text-decoration:none;
+    font-variant:small-caps;
+    font-size:larger;
+    padding:0 10px;
+    width: 100px;
+
+ } 
+
+ .menu>ul>li:hover>ul{
+    display:block;
+ } 
+
+ .menu ul ul a:hover{
+    background-color:orangered;
+    color:white;
+ } 
+
+
 .menu-top-right ul li{
     position:absolute;
     top: 30%; 
@@ -143,7 +145,6 @@ article div img{
 
 
 }
-
 .tieude{
     font-family: 'Roboto Mono', monospace;
     width: 100%;
